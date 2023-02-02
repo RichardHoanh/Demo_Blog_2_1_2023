@@ -77,8 +77,6 @@ public class BlogController {
         return "redirect:/blog";
     }
 
-
-
     @GetMapping("/delete")
     public String delete(@RequestParam int id) {
         blogService.deleteById(id);
